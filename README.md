@@ -20,7 +20,7 @@ WEbiste Hits increase
      
   
     <script>
-	 var myGeeksforGeeksWindow;
+	 var WindowObj;
 	  
    
    function sleep(ms) {
@@ -32,20 +32,20 @@ WEbiste Hits increase
       for (let i = 1; i <100000 ; i++) { 
 	 document.getElementById("count").innerHTML = i;
           openWin();	  
-         await sleep(100);
+         await sleep(50);
          closeWin();
       }
    }
 
    
   function openWin() {
-            myGeeksforGeeksWindow = window
+            WindowObj = window
                      .open("https://karanpackersandmovers.com/", "_blank", "width=200, height=200");
         }
   
   function closeWin() {
-            myGeeksforGeeksWindow.close();
-			myGeeksforGeeksWindow= null;
+            WindowObj.close();
+			WindowObj= null;
         }  
         
 		 Tutor();
